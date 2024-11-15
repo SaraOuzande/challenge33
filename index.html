@@ -3,16 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./css/styles.css" rel="stylesheet" type="text/css" />
-  <title>Piedra, papel, tijera</title>
+  <title>Piedra, Papel o Tijera</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <button class="boton-jugada" data-jugada="piedra">Piedra</button>
-  <button class="boton-jugada" data-jugada="papel">Papel</button>
-  <button class="boton-jugada" data-jugada="tijera">Tijera</button>
-  <div id="resultados"></div>
-  <p id="contador-usuario">Tus puntos: 0</p>
-  <p id="contador-ordenador">Puntos de la máquina: 0</p>
-  <script src="./js/script.js"></script>
+  <h1>Juego: Piedra, Papel o Tijera</h1>
+  <div class="juego">
+    <div class="opciones">
+      <button data-jugada="piedra">Piedra</button>
+      <button data-jugada="papel">Papel</button>
+      <button data-jugada="tijera">Tijera</button>
+    </div>
+    <div id="resultados"></div>
+    <div class="puntuacion">
+      <p>Usuario: <span id="contador-usuario">0</span></p>
+      <p>Ordenador: <span id="contador-ordenador">0</span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
